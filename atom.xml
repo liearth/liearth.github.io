@@ -4,9 +4,9 @@
   <subtitle>一些记录，一些进步。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://sidesky.com/"/>
+  <link href="http://tidesky.com/"/>
   <updated>2016-10-04T05:24:51.000Z</updated>
-  <id>http://sidesky.com/</id>
+  <id>http://tidesky.com/</id>
   
   <author>
     <name>Tidesky</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://sidesky.com/2016/10/04/hello-world/"/>
-    <id>http://sidesky.com/2016/10/04/hello-world/</id>
+    <link href="http://tidesky.com/2016/10/04/hello-world/"/>
+    <id>http://tidesky.com/2016/10/04/hello-world/</id>
     <published>2016-10-04T04:45:08.000Z</published>
     <updated>2016-10-04T05:24:51.000Z</updated>
     
