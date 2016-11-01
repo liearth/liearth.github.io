@@ -103,7 +103,7 @@ GitHubGitHub 相当于一个仓库，可以用它来存放各种文件，包括�
 <meta property="og:image" content="http://oft5n9nd9.bkt.clouddn.com/ssk_menu.png">
 <meta property="og:image" content="http://oft5n9nd9.bkt.clouddn.com/ssk_keys.png">
 <meta property="og:image" content="http://oft5n9nd9.bkt.clouddn.com/config.png">
-<meta property="og:updated_time" content="2016-10-31T14:38:11.000Z">
+<meta property="og:updated_time" content="2016-11-01T00:04:12.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="你值得拥有——通过 GitHub + Hexo 搭建博客">
 <meta name="twitter:description" content="介绍
@@ -356,16 +356,16 @@ GitHubGitHub 相当于一个仓库，可以用它来存放各种文件，包括�
 <h4 id="GitHub-部分"><a href="#GitHub-部分" class="headerlink" title="GitHub 部分"></a>GitHub 部分</h4><p>这里要做以下几步</p>
 <ul>
 <li>需要一个 GitHub 帐号（没有的就去注册一个吧），并登录进去。</li>
-<li>创建一个仓库，其名称为 user_name.github.io 这样的格式。</li>
+<li>创建一个仓库，其名称为 <code>user_name.github.io</code> 这样的格式。</li>
 <li>添加 SSH Key 到你的 GitHub 上。</li>
 </ul>
-<p>登录 GitHub 后，点击右边绿色的 <code>New repository</code> 按钮，用来创建一个项目。<br><img src="http://oft5n9nd9.bkt.clouddn.com/create_repository.png" alt=""><br>进入下一页后输入你的项目名称，格式是 yourname.github.io<br>接着点击下面绿的的<code>Create repository</code>按钮<br><img src="http://oft5n9nd9.bkt.clouddn.com/new_repository.png" alt=""><br>经过以上 2 步的操作就添加了一个仓库了，而这个仓库就是你的博客的大本营了。</p>
+<p>登录 GitHub 后，点击右边绿色的 <code>New repository</code> 按钮，用来创建一个项目。<br><img src="http://oft5n9nd9.bkt.clouddn.com/create_repository.png" alt=""><br>进入下一页后输入你的项目名称，格式是 <code>yourname.github.io</code><br>接着点击下面绿的的<code>Create repository</code>按钮<br><img src="http://oft5n9nd9.bkt.clouddn.com/new_repository.png" alt=""><br>经过以上 2 步的操作就添加了一个仓库了，而这个仓库就是你的博客的大本营了。</p>
 <p>接着要说一下第 3 步，创建 SSH Key 了。创建 SSH Key 的其中一个好处就是上传文件到 GitHub 的时候不用每次都要输入密码。<br>进入 GitHub 的设置页面，找到 <code>SSH and GPG keys</code> 这个选项，并点击进入。<br><img src="http://oft5n9nd9.bkt.clouddn.com/ssk_menu.png" alt=""></p>
-<p>页面上有教你如何创建 SSH Key 的。如果在 SSH Key 上遇到问题，可以通过点击以下<a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">网址</a>来解决。<br><img src="http://oft5n9nd9.bkt.clouddn.com/ssk_keys.png" alt=""></p>
+<p>页面上有教你如何创建 SSH Key 的。如果在 SSH Key 上遇到问题，可以通过这个<a href="https://help.github.com/articles/generating-an-ssh-key/" target="_blank" rel="external">网址</a>来解决。<br><img src="http://oft5n9nd9.bkt.clouddn.com/ssk_keys.png" alt=""></p>
 <p>翻译过来就是</p>
 <ul>
 <li>检查电脑是否存在 SSH Keys；</li>
-<li>创建一个新的 SSH Key 并添加到 ssh-agent 当中，其中 ssh-agent 是一个密钥管理器；</li>
+<li>创建一个新的 SSH Key 并添加到 <code>ssh-agent</code> 当中，其中 <code>ssh-agent</code> 是一个密钥管理器；</li>
 <li>添加 SSH Key 到你的 GitHub 中；</li>
 <li>测试你的 SSH 是否可以已经接通了。</li>
 </ul>
@@ -378,10 +378,10 @@ GitHubGitHub 相当于一个仓库，可以用它来存放各种文件，包括�
 <li>第 2 步的 <code>hexo init blog</code> 表示在一个名为 blog 的文件夹创建 Hexo 所需要的文件，用来存放 Hexo 的所有数据。它的位置在 <code>/Users/computer_name/blog</code> 。所以，如果不喜欢 blog 这个名字，那么完全可以用另外一个，例如 MyBlog 等等；</li>
 <li>接着执行 <code>cd blog</code>，进入博客的目录；</li>
 <li>进入目录后就是执行 <code>npm install</code> 命令进行安装了，在安装的过程中如果出现问题，例如卡住了，我的做法是重新打开终端，重新安装。当然，最好是在自由的网络环境下，这样能够保证成功安装。当安装好了以后，那么你的博客就已经在本地创建成功了；</li>
-<li>接下来就是 <code>hexo server</code> 命令了，这个命令表示本地调试，在浏览器中输入 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 就可以看到你的博客了。通过 Ctrl+C 来停止本地测试。</li>
+<li>接下来就是 <code>hexo server</code> 命令了，这个命令表示本地调试，在浏览器中输入 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 就可以看到你的博客了。通过 <code>Ctrl+C</code> 来停止本地测试。</li>
 </ul>
 <h4 id="把博客上传到-GitHub-中"><a href="#把博客上传到-GitHub-中" class="headerlink" title="把博客上传到 GitHub 中"></a>把博客上传到 GitHub 中</h4><p>到目前为止，你的博客只能够在本地查看，网上是看不到的。这是因为经过了以上的操作，我们已经把博客成功地创建在本地。另外，我们也应该注意到，目前 GitHub 和 Hexo 还没有产生过任何的联系。所以，GitHub 和 Hexo 的操作步骤都是独立的，你可以先安装 Hexo，也可以先安装 GitHub。</p>
-<p>接下来要做的就是把本地的数据上传到 GitHub 上。进入博客的目录，以我的目录为例。<br>进入 Blog 目录，打开一个名为 <code>_config.yml</code> 的文件，打开方式使用文本编辑就可以了。<br><img src="http://oft5n9nd9.bkt.clouddn.com/config.png" alt=""><br>找到一个名为 deploy 的标签。修改为以下的形式。其中 repo 后面填写的是已经创建的仓库的地址，格式是：<code>https://github.com/user_name/user_name.github.io</code><br>另外，要注意的是空格的问题。冒号: 后面是有一个空格的。</p>
+<p>接下来要做的就是把本地的数据上传到 GitHub 上。进入博客的目录，以我的目录为例。<br>进入 Blog 目录，打开一个名为 <code>_config.yml</code> 的文件，打开方式使用文本编辑就可以了。<br><img src="http://oft5n9nd9.bkt.clouddn.com/config.png" alt=""><br>找到一个名为 <code>deploy</code> 的标签。修改为以下的形式。其中 <code>repo</code> 后面填写的是已经创建的仓库的地址，格式是：<code>https://github.com/user_name/user_name.github.io</code><br>另外，要注意的是空格的问题。冒号: 后面是有一个空格的。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: https://github.com/user_name/user_name.github.io</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
 <p>完成后保存文件。在这里，我们可以看到，GitHub 和 Hexo 这两条线索终于在这里交汇产生联系了。接着在终端里输入以下命令。<br><code>cd /Users/computer_name/blog</code> 进入博客目录，进入后 hexo 的相关命令才能生效。<strong>另外，需要注意的是，以后通过 hexo 命令执行博客的一些操作，例如更新博客，需要首先执行 <code>cd</code> 命令进入你的博客目录，接着才能够使用。</strong></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div><div class="line">hexo clean</div><div class="line">hexo generate</div><div class="line">hexo deploy</div></pre></td></tr></table></figure>
