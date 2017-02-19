@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://tidesky.com/2016/11/12/CustomUITableViewHeaderFooterView/</loc>
+    <lastmod>2017-02-19T15:04:48.000Z</lastmod>
+    <data>
+        <display>
+        <title>所见即所得（下）——通过 XIB 自定义 UITableViewHeaderFooterView</title>
+        <pubTime>2016-11-12T13:00:00.000Z</pubTime>
+        
+        <tag>UIView</tag>
+         
+         
+           
+             
+              <breadCrumb title="Blog" url="http://tidesky.com/categories/Blog/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://tidesky.com/2016/11/06/CustomUIView/</loc>
     <lastmod>2017-02-19T14:31:42.000Z</lastmod>
     <data>
@@ -17,26 +37,6 @@
            
              
               <breadCrumb title="iOS" url="http://tidesky.com/categories/iOS/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://tidesky.com/2016/11/12/CustomUITableViewHeaderFooterView/</loc>
-    <lastmod>2017-02-19T14:30:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>所见即所得（下）————通过 XIB 自定义 UITableViewHeaderFooterView</title>
-        <pubTime>2016-11-12T13:00:00.000Z</pubTime>
-        
-        <tag>UIView</tag>
-         
-         
-           
-             
-              <breadCrumb title="Blog" url="http://tidesky.com/categories/Blog/"/>
           
         </display>
     </data>
