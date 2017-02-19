@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tidesky.com/"/>
-  <updated>2017-02-19T14:19:57.000Z</updated>
+  <updated>2017-02-19T14:30:53.000Z</updated>
   <id>http://tidesky.com/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>所见即所得（二）————通过 XIB 自定义 UITableViewHeaderFooterView</title>
+    <title>所见即所得（下）————通过 XIB 自定义 UITableViewHeaderFooterView</title>
     <link href="http://tidesky.com/2016/11/12/CustomUITableViewHeaderFooterView/"/>
     <id>http://tidesky.com/2016/11/12/CustomUITableViewHeaderFooterView/</id>
     <published>2016-11-12T13:00:00.000Z</published>
-    <updated>2017-02-19T14:19:57.000Z</updated>
+    <updated>2017-02-19T14:30:53.000Z</updated>
     
     <content type="html"><![CDATA[<p>自定义 UIView 在 iOS 开发中是比较常用的。在这篇文章中，将介绍如何通过 XIB 自定义 UITableViewHeaderFooterView。<code>UITableViewHeaderFooterView</code> 是用来定义 UITableView 的 header 或 footer 的。创建一个继承自 UITableViewHeaderFooterView 的子类的时候，Xcode 是不会自动创建一个 XIB 文件的。这个情况跟自定义 UIView 是一样的。所以，我们也就可以通过单独创建一个 XIB 文件来实现我们的目的了。</p>
 <a id="more"></a>
@@ -55,15 +55,16 @@
   </entry>
   
   <entry>
-    <title>所见即所得（一）——通过 XIB 自定义 UIView</title>
+    <title>所见即所得（上）——通过 XIB 自定义 UIView</title>
     <link href="http://tidesky.com/2016/11/06/CustomUIView/"/>
     <id>http://tidesky.com/2016/11/06/CustomUIView/</id>
     <published>2016-11-06T13:30:00.000Z</published>
-    <updated>2017-02-19T14:15:12.000Z</updated>
+    <updated>2017-02-19T14:31:42.000Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="源起"><a href="#源起" class="headerlink" title="源起"></a>源起</h3><p>创建一个继承自 UIView 的类的时候，Xcode 是不会给你创建对应的 XIB 文件的（没有勾选框给你）。这个对于视觉性动物来说是说不过去的。</p>
-<p>有意思的是，Xcode 是允许你单独创建一个 XIB 文件的。所以，是可以通过 XIB 自定义 UIView 的。这种所见即所得的快感当然是不容错过的。</p>
+    <content type="html"><![CDATA[<p>所见即所得符合视觉动物的直觉。</p>
 <a id="more"></a>
+<h3 id="源起"><a href="#源起" class="headerlink" title="源起"></a>源起</h3><p>创建一个继承自 UIView 的类的时候，Xcode 是不会给你创建对应的 XIB 文件的（没有勾选框给你）。这个对于视觉性动物来说是说不过去的。</p>
+<p>有意思的是，Xcode 是允许你单独创建一个 XIB 文件的。所以，是可以通过 XIB 自定义 UIView 的。这种所见即所得的快感当然是不容错过的。</p>
 <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>具体的操作步骤比较简单，主要分为 4 步。这里创建一个名为 StarView 的类（只是用来展示星星符号的，意思意思就可以了，哈哈），话不多说，直接开干。</p>
 <ol>
 <li><p>分别创建一个继承自 UIView 的类以及一个 XIB 文件（应该同名）；<br><img src="http://oft5n9nd9.bkt.clouddn.com/14872553765306.png" alt=""></p>
@@ -87,8 +88,7 @@
     
     <summary type="html">
     
-      &lt;h3 id=&quot;源起&quot;&gt;&lt;a href=&quot;#源起&quot; class=&quot;headerlink&quot; title=&quot;源起&quot;&gt;&lt;/a&gt;源起&lt;/h3&gt;&lt;p&gt;创建一个继承自 UIView 的类的时候，Xcode 是不会给你创建对应的 XIB 文件的（没有勾选框给你）。这个对于视觉性动物来说是说不过去的。&lt;/p&gt;
-&lt;p&gt;有意思的是，Xcode 是允许你单独创建一个 XIB 文件的。所以，是可以通过 XIB 自定义 UIView 的。这种所见即所得的快感当然是不容错过的。&lt;/p&gt;
+      &lt;p&gt;所见即所得符合视觉动物的直觉。&lt;/p&gt;
     
     </summary>
     
