@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tidesky.com/"/>
-  <updated>2017-12-06T15:15:05.663Z</updated>
+  <updated>2017-12-07T13:08:03.191Z</updated>
   <id>http://tidesky.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://tidesky.com/2017/12/06/BuildConfigurations/"/>
     <id>http://tidesky.com/2017/12/06/BuildConfigurations/</id>
     <published>2017-12-06T14:30:00.000Z</published>
-    <updated>2017-12-06T15:15:05.663Z</updated>
+    <updated>2017-12-07T13:08:03.191Z</updated>
     
     <content type="html"><![CDATA[<p>本文将介绍如何利用 Build Configurations 配置环境变量。</p>
 <a id="more"></a>
@@ -32,20 +32,20 @@
 <li>Targets</li>
 </ul>
 <p>目前本文只探讨 Build Configurations 的使用，至于 xcconfig 文件和 Targets，以后有机会再分享。</p>
-<p>Build Configurations 顾名思义是配置的意思，它是 Xcode 上的一个用来配置各种环境的功能。在新建一个项目后，在 Project-&gt;Info 那里就会看到 Configurations。它有 Debug 和 Release 2 个选项。</p>
-<h4 id="各种环境"><a href="#各种环境" class="headerlink" title="各种环境"></a>各种环境</h4><p>接下来，我们就可以利用 Configurations 配置需要的环境。例如，我们需要一个 DEV 环境用来自测，一个 UAT 环境用来给测试人员以及一个 Production 版本上线。我们在 Build 的时候就需要 Build 3 个版本了。另外，为了方便调试代码，我们还会做一些额外的工作。正如 Xcode 上默认的那 2 个环境（Debug 和 Release）那样，区分好调试的环境和出 Build 的环境。如此算来，就要 2＊3 = 6 种环境了。分别是 DebugDEV, DebugUAT, DebugProduction, DEV, UAT, Production。</p>
-<p>一般来说，带有 Debug 前缀的环境是方便程序员来调试的。例如自定义的 NSLog，在 Debug 的时候，会在控制台输出各种信息。但出 Build 的时候会禁用掉 NSLog，毕竟那也会影响一丢丢性能的。</p>
+<p>Build Configurations 顾名思义是配置的意思，它是 Xcode 上的一个用来配置各种环境的功能。在新建一个项目后，在 <code>Project</code>-&gt;<code>Info</code> 那里就会看到 <code>Configurations</code>。它有 <code>Debug</code> 和 <code>Release</code> 2 个选项。</p>
+<h4 id="准备好需要的环境"><a href="#准备好需要的环境" class="headerlink" title="准备好需要的环境"></a>准备好需要的环境</h4><p>接下来，我们就可以利用 Configurations 配置需要的环境。例如，我们需要一个 DEV 环境用来自测，一个 UAT 环境用来给测试人员以及一个 Production 版本上线。我们在 Build 的时候就需要 Build 3 个版本了。另外，为了方便调试代码，我们还会做一些额外的工作。正如 Xcode 上默认的那 2 个环境（Debug 和 Release）那样，区分好调试的环境和出 Build 的环境。如此算来，就要 2＊3 = 6 种环境了。分别是 DebugDEV, DebugUAT, DebugProduction, DEV, UAT, Production。</p>
+<p>一般来说，带有 <code>Debug</code> 前缀的环境是方便程序员来调试的。例如自定义的 NSLog，在 Debug 的时候，会在控制台输出各种信息。但出 Build 的时候会禁用掉 NSLog，毕竟那也会影响一丢丢性能的。</p>
 <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>配置环境变量的步骤比较简单：</p>
 <ol>
-<li><p>在 <code>PROJECT</code> –&gt; <code>Info</code> –&gt; <code>Configurations</code> 点击“+”按钮，将会看到 Duplicate “Debug” Configuration 和 Duplicate “Release” Configuration 2 个选项；</p>
+<li><p>在 <code>PROJECT</code> –&gt; <code>Info</code> –&gt; <code>Configurations</code> 点击“+”按钮，将会看到 <code>Duplicate &quot;Debug&quot; Configuration</code> 和 <code>Duplicate &quot;Release&quot; Configuration</code> 2 个选项；</p>
 </li>
 <li><p>这 2 个选项对应调试环境和出 Build 的环境，所以我们需要分别对 <code>Debug</code> 和 <code>Release</code> 复制出 DEV, UAT, Production 这 3 个环境变量。即 <code>Debug</code> 下复制出 DebugDEV, DebugUAT, DebugProduction。<code>Release</code> 复制出 DEV, UAT, Production；<img src="http://oft5n9nd9.bkt.clouddn.com/15125668680038.png" alt=""></p>
 </li>
-<li><p>在 <code>TARGETS</code> –&gt; <code>Build Settings</code> 那里找到 Preprocessor Macros，系一些宏定义，方便区分各种环境。<img src="http://oft5n9nd9.bkt.clouddn.com/15125670398182.png" alt=""></p>
+<li><p>在 <code>TARGETS</code> –&gt; <code>Build Settings</code> 那里找到 <code>Preprocessor Macros</code>，系一些宏定义，方便区分各种环境。<img src="http://oft5n9nd9.bkt.clouddn.com/15126517365602.png" alt=""></p>
 </li>
 </ol>
 <h4 id="CocoaPods"><a href="#CocoaPods" class="headerlink" title="CocoaPods"></a>CocoaPods</h4><p>需要注意的是，如果你的项目中有用到 CocoaPods，那么在设置完后就需要运行一下 pod install 命令。</p>
-<p>一般情况下做到这里，一个简易的可控环境变量就完成了。需要 Build app 的时候，只需要到 Edit Scheme -&gt; Archive -&gt; Build Configuration 中选择好对应的环境就可以了。</p>
+<p>一般情况下做到这里，一个简易的可控环境变量就完成了。需要 Build app 的时候，只需要到 <code>Edit Scheme</code> -&gt; <code>Archive</code> -&gt; <code>Build Configuration</code> 中选择好对应的环境就可以了。</p>
 <h4 id="结合-Scheme"><a href="#结合-Scheme" class="headerlink" title="结合 Scheme"></a>结合 Scheme</h4><p>我们可以通过 Scheme 与 Build Configurations 结合使用，达到更方便切换环境的目的。</p>
 <p>方法很简单。在 Scheme 那里选中 New Scheme 并输入名字。本文定义了 DEV, UAT 和 Release 的环境。所以对应的 Scheme 名字也遵循这个规律。可以在项目名加上前缀或后缀，如 ProjectDEV。</p>
 <p>接着就是 Edit Scheme，在 Edit Scheme 页面配置好对应的环境。如在 ProjectDEV 的 Scheme 里面，Run 选项选择 DebugDev，Archive 那里选择 DEV。选好对应的环境后，就大功告成了。</p>
