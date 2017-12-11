@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tidesky.com/"/>
-  <updated>2017-12-07T13:08:03.191Z</updated>
+  <updated>2017-12-11T12:35:25.771Z</updated>
   <id>http://tidesky.com/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>配置环境变量</title>
     <link href="http://tidesky.com/2017/12/06/BuildConfigurations/"/>
     <id>http://tidesky.com/2017/12/06/BuildConfigurations/</id>
-    <published>2017-12-06T14:30:00.000Z</published>
-    <updated>2017-12-07T13:08:03.191Z</updated>
+    <published>2017-12-06T14:30:20.000Z</published>
+    <updated>2017-12-11T12:35:25.771Z</updated>
     
     <content type="html"><![CDATA[<p>本文将介绍如何利用 Build Configurations 配置环境变量。</p>
 <a id="more"></a>
